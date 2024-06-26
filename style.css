@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#score{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+}
+.feedback{
+    position: absolute;
+    top: 140px;
+    right: 165px;
+    color: white;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+}
+.feedback a{
+    list-style: none;
+    font-size: 1rem;
+   
+}
+.feedback a:hover{
+    color: rgb(185, 72, 72);
+}
+#board{
+    height: 90vmin;
+    width: 90vmin;
+    /* background:linear-gradient(rgb(126, 192, 126), rgb(165, 165, 107)); */
+    background-color: black;
+    border: 2px solid rgb(235, 226, 226);
+    border-radius: 7px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+ 
+}
+#hiscoreBox{
+    position: absolute;
+    top: 50px;
+    right: 165px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+}
+.head{
+    /* background-color: red; */
+     /* border-radius: 50%;   */
+     border: 7px solid rgb(234, 235, 227);
+     background: linear-gradient(rgb(199, 101, 101), rgb(209, 209, 116));
+
+     transform: scale(1.12);
+     border-radius: 13px;
+
+
+}
+.snake{
+    /* background-color: purple; */
+    background-color: aliceblue;
+    border:.25vmin solid rgb(17, 16, 16);
+    border-radius:30%;
+    border: 2px solid red;
+  
+
+
+}
+.food{
+    background: linear-gradient(red, rgb(233, 13, 24));
+    border: .25vmin solid black;
+    border-radius: 12px;  
+
+}
